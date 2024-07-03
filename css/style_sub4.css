@@ -1,0 +1,531 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+img, iframe, video{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+body{
+    font-family: 'Pretendard';
+    color: #111;
+    font-size: 22px;
+    line-height: 24px;
+    min-width: 1500px;
+}
+/*header*/
+#header{
+    border-bottom: 2px solid #656668;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    
+}
+.header_inner{
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.logo{
+    padding-right: 92px;
+}
+.gnb{
+    display: flex;
+}
+.gnb li{
+    padding-right: 93px;
+    font-size: 22px;
+    font-weight: Light;
+}
+.lnb{
+    display: flex;
+    margin-left: auto;
+}
+.lnb li{
+    padding-left: 35px;
+}
+
+/*title_list*/
+/*  하이퍼링크 설정 (메뉴 on)*/
+a:link{text-decoration:none; color:#000;}
+a:visited{text-decoration:none; color:#000;}
+a:hover{text-decoration:none; color:#000;}
+a:active{text-decoration:none; color:#000;}
+#title_list{
+    width: 100%;
+    background: #fff;
+    transition: top 0.2s;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 80;
+    margin-top: 100px;
+  }
+  .nav-up {
+    top: -100px !important;
+    /*헤더 높이와 같이*/
+  }
+  .nav-down {
+    top: 0px !important;
+  }
+#title_list{
+    background-image: url(../images/sub1/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.t_gnb{
+    margin:auto;
+    text-transform:uppercase;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+}	
+.t_gnb>li{
+        width:50%;}
+.t_gnb>li>a{
+    
+    display:block;
+        font-size:23px;
+        padding:20px 0 0;
+    color: #979797;}
+.t_gnb>li>a:hover{color:#4E4F51;}
+.solid{width:60%;
+        margin:auto;
+        margin-top:20px;
+        height:4px;
+        background:#4E4F51;
+        visibility:hidden;
+        opacity:0;
+        transform:scaleX(0);
+        transition-property:opacity, transform;
+        transition-duration:0.5s;}
+.t_gnb>li>a:hover .solid{transform:scaleX(1);
+                        opacity:1;
+                        visibility:visible;}
+
+
+
+/*event*/
+#event{
+    width: 1450px;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#event>h1>a{
+    display: inline-block;
+    color: #fff;
+    background-color: #3A3A3A;
+    padding: 15px 60px ;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.et_main{
+    padding-top: 116px;
+    padding-bottom: 210px;
+}
+/*week1*/
+#week1{
+    width: 1162px;
+    margin: 0 auto;
+    padding-top: 223px;
+
+}
+#week1>h1{
+    text-align: center;
+    padding-bottom: 150px;
+}
+#week1>h1>a{
+    display: inline-block;
+    color: #fff;
+    background-color: #3A3A3A;
+    padding: 15px 60px ;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.box h1{
+    background-image: url(../images/sub4/draw_.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.box h1 a{
+    background-image: url(../images/sub4/draw_icon.png);
+    background-position: 0% 10%;
+    background-repeat: no-repeat;
+    display: block;
+    font-size: 35px;
+    color: #9B9B9B;
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    padding-left: 26px;
+   
+}
+.week1_inner{
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.text h2{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+}
+.text h3{
+    font-size: 20px;
+    font-weight: 400; 
+    padding-bottom: 16px; 
+}
+.text{
+    justify-content: flex-start;
+}
+.text>ul{
+    display: flex;
+    padding-bottom: 35px;
+}
+.text>ul>li{
+    font-size: 18px;
+}
+.line{
+    font-size: 18px;
+    color: #7D7C7C;
+    padding-left: 15px;
+    padding-right: 198px;
+}
+.red{
+    color: #FF001A;
+    font-size: 20px;
+}
+.red>span{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.text>ol{
+    display: flex;
+    justify-content: space-between;
+}
+.text>ol>li>a{
+    font-size: 18px;
+    font-weight: 400;
+   display: inline-block;
+   border: 1px solid #707070;
+   border-radius: 15px;
+   padding: 10px 60px;
+}
+.text>ol>li>a:hover{
+    font-weight: 500;
+    color: #d1d1d1;
+    background-color: #111;
+    transition: all 0.5s;
+}
+
+/*week2*/
+#week2{
+    width: 1162px;
+    margin: 0 auto;
+    padding-top: 223px;
+
+
+}
+#week2>h1{
+    text-align: center;
+    padding-bottom: 150px;
+}
+#week2>h1>a{
+    display: inline-block;
+    color: #fff;
+    background-color: #3A3A3A;
+    padding: 15px 60px ;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.box h1{
+    background-image: url(../images/sub4/draw_.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.box h1 a{
+    background-image: url(../images/sub4/draw_icon.png);
+    background-position: 0% 12%;
+    background-repeat: no-repeat;
+    display: block;
+    font-size: 35px;
+    color: #9B9B9B;
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    padding-left: 26px;
+   
+}
+.week2_inner{
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.text h2{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+}
+.text h3{
+    font-size: 20px;
+    font-weight: 400; 
+    padding-bottom: 16px; 
+}
+.text{
+    justify-content: flex-start;
+}
+.text>ul{
+    display: flex;
+    padding-bottom: 35px;
+}
+.text>ul>li{
+    font-size: 18px;
+}
+.line{
+    font-size: 18px;
+    color: #7D7C7C;
+    padding-left: 15px;
+    padding-right: 198px;
+}
+.red{
+    color: #FF001A;
+    font-size: 20px;
+}
+.red>span{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.text>ol{
+    display: flex;
+    justify-content: space-between;
+}
+.text>ol>li>a{
+    font-size: 18px;
+    font-weight: 400;
+   display: inline-block;
+   border: 1px solid #707070;
+   border-radius: 15px;
+   padding: 10px 60px;
+}
+.text>ol>li>a:hover{
+    font-weight: 500;
+    color: #d1d1d1;
+    background-color: #111;
+    transition: all 0.5s;
+}
+/*notice*/
+.notice{
+    width: 1070px;
+    margin: 0 auto;
+}
+.notice h6{
+    text-align: center;
+}
+.notice h6 a{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    border-radius: 18px;
+    border: 1px solid #707070;
+    margin-top: 183px;
+    padding: 13px 75px ;
+    background-color: #E6E6E6;
+}
+.nt_inner{
+    padding-top: 140px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/*last_event*/
+#last_event{
+    margin: 0 auto;
+    width: 1520px;
+    margin-top: 120px;
+    border-top: 1px solid #666666;
+    padding-top: 240px;
+    padding-bottom: 50px;
+}
+.last_title{
+    width: 814px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 606px;
+    padding-bottom: 185px;
+    align-items: flex-end;
+ 
+}
+
+.last_title h1 a{
+    display: inline-block;
+    color: #fff;
+    background-color: #3A3A3A;
+    padding: 15px 60px ;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.last_title p a{
+    display: inline-block;
+    background-color: #E6E6E6;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 6px 12px;
+}
+
+.last_inner ul{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.last_inner ul li{
+    /*여기서, li가 body가 크기가 조정될 때 같이 줄었다가 늘었다가 해야하므로, 반드시 li의 길이를 상대단위로 설정한다.(%)*/
+    width: 43%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.last_inner ul li img{
+    width: 100%;
+    /*li의 크기가 body의 크기에 따라 계속 변화하는 상태이므로, 그안에 이미지도 같은 크기로 움직여야 한다.*/
+}
+
+.white_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*자식인 white_text를 가로세로 가운데로 보냄*/
+}
+.white_text{
+    text-align: center;
+    color: #fff;
+}
+.white_text h2{
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.white_text h3{
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+.white_text p a{
+    font-size: 20px;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 5px 25px;
+    color: #fff;
+    border-radius: 21.5px;
+}
+
+/*호버가 된 모양을 다 만들었다면, 호버하기 전에는 안보이는 요소를 안보이게 만든다.*/
+.white_box{
+    opacity: 0;
+    /*안보이는 상태 만들기*/
+    transition: all 0.5s;
+}
+.last_inner ul li:hover .white_box{
+    opacity: 1;
+    /*img 호버X*/
+}
+
+/*footer*/
+#footer{
+    border-top: #ccc 1.5px solid;
+    margin-top: 260px;
+}
+.footer_inner{
+    margin:0px auto;
+    width: 1450px;
+    position: relative;
+}
+.ft_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_inner ul{
+    display: flex;
+    padding-top: 55px;
+}
+.footer_inner ul li{
+    padding-right: 30px;
+    padding-bottom: 32px;
+}
+.footer_inner ul li a{
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer_inner ol{ 
+    display: flex;
+    padding-top: 55px;
+}
+.footer_inner ol li{
+    padding-left: 28px;
+    padding-bottom: 32px;
+}
+.footer_inner p{
+    font-size: 15px;
+}
+.footer_inner .on{
+    padding-top: 10px;
+    font-size: 14px;
+}
+.footer_inner h2{
+    position: absolute;
+    top: 0;
+    left: 1208px;
+}
+
+/*TOP버튼*/
+.top_btn{transition:all 0.5s;
+    position:fixed;
+    right:30px;
+    bottom:50px;
+    background:rgb(59, 59, 59);
+    border-radius:50%;}
+.top_btn:hover{transform:translateY(-5px);
+    box-shadow:5px 5px 10px rgba(0,0,0,0.3)}
+.top_btn>a{
+    display:inline-block;
+    letter-spacing: 1px;
+    padding:20px 8px;
+    text-align:center;
+    width:51px;
+    color:#fff;}

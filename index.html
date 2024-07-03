@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <title>Koi</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!--TOP버튼-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+	  <script src="js/script.js"></script>
+    <!--폰트 어썸-->
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="header_inner">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="로고이미지"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="./sub1.html">BRAND</a></li>
+                <li><a href="./sub2.html">SHOP</a></li>
+                <li><a href="./sub3.html">NOTICE</a></li>
+                <li><a href="./sub4.html">EVENT</a></li>
+            </ul>
+            <ol class="lnb">
+                <li><a href="#"><img src="./images/icon/icon1.png" alt="아이콘1"></a></li>
+                <li><a href="#"><img src="./images/icon/icon2.png" alt="아이콘2"></a></li>
+                <li><a href="#"><img src="./images/icon/icon3.png"alt="아이콘3"></a></li>
+                <li><a href="#"><img src="./images/icon/icon4.png" alt="아이콘4"></a></li>
+            </ol>
+        </div><!--header_inner-->
+    </div><!--header-->
+
+      <!-- Swiper -->
+  <div class="swiper main_banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide bg1"><a href="#"></a></div><!--swiper-slide-->
+      <div class="swiper-slide bg2"><a href="#"></a></div><!--swiper-slide-->
+      <div class="swiper-slide bg3"><a href="#"></a></div><!--swiper-slide-->
+    </div><!--swiper-wrapper-->
+    <div class="swiper-pagination mb_pag"></div>
+  </div><!--swiper-->
+
+  <div id="logo_intro">
+    <img src="./images/main/logo_intro.jpg" alt="로고 인트로 이미지">
+  </div><!--logo_intro-->
+
+  <div id="best_keyword">
+    <h2><a href="#">BEST KEY WORD</a></h2>
+    <div class="bk_inner">
+        
+   <!--탭 시작-->
+		<!--탭 메뉴 영역(우리가 실제로 클릭할 부분)
+		각각의 li안에 a태그의 아이디를 가진 tab이 보이는 원리이다.
+		-->
+    <ul class="icon">
+      <li><img src="./images/main/icon_circle.png" alt="동그라미 아이콘"></li>
+      <li><img src="./images/main/icon_circle.png" alt="동그라미 아이콘"></li>
+      <li><img src="./images/main/icon_circle.png" alt="동그라미 아이콘"></li>
+    </ul>
+		<ul class="tabs">
+			<li class="tabs_box1">
+        <a href="#tab1">WOMEN</a>
+      </li>
+			<li class="tabs_box2">
+        <a href="#tab2">MEN</a>
+      </li>
+			<li class="tabs_box3">
+        <a href="#tab3">LIFE</a>
+      </li>
+		</ul>
+
+		<!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+		<div class="tab_container">
+
+			<div id="tab1" class="tab_content bg1">
+				<!--Content-->
+        <div class="tab1_women1">
+          <a href="#" class="po_1"><img src="./images/main/best_keyword_w1.jpg" alt="여자1"></a>
+          <p class="up_box1"><a href="#">01.</a></p>
+          <p class="up_box1-1"><a href="#">레이어드 스커트</a></p>
+        </div><!--tab1_women1-->
+        <div class="tab1_women2">
+          <a href="#" class="po_2"><img src="./images/main/best_keyword_w2.jpg" alt="여자2"></a>
+          <p class="up_box2"><a href="#">02.</a></p>
+          <p class="up_box2-1"><a href="#">원피스</a></p>
+        </div><!--tab1_women2-->
+        <div class="tab1_women3">
+          <a href="#" class="po_3"><img src="./images/main/best_keyword_w3.jpg" alt="여자3"></a>
+          <p class="up_box3"><a href="#">03.</a></p>
+          <p class="up_box3-1"><a href="#">백팩</a></p>
+        </div><!--tab1_women3-->
+        <h6><a href="#">MORE</a></h6> 
+       
+			</div><!--tab1-->
+
+			<div id="tab2" class="tab_content bg2">
+				<!--Content-->
+        <div class="tab2_men1">
+          <a href="#" class="po_1"><img src="./images/main/best_keyword_m1.jpg" alt="남자1"></a>
+          <p class="up_box1"><a href="#">01.</a></p>
+          <p class="up_box1-1"><a href="#">반팔 셔츠</a></p>
+        </div><!--tab2_men1-->
+        <div class="tab2_men2">
+          <a href="#" class="po_2"><img src="./images/main/best_keyword_m2.jpg" alt="남자2"></a>
+          <p class="up_box2"><a href="#">02.</a></p>
+          <p class="up_box2-1"><a href="#">바람막이</a></p>
+        </div><!--tab2_men2-->
+        <div class="tab2_men3">
+          <a href="#" class="po_3"><img src="./images/main/best_keyword_m3.jpg" alt="남자3"></a>
+          <p class="up_box3"><a href="#">03.</a></p>
+          <p class="up_box3-1"><a href="#">로퍼</a></p>
+        </div><!--tab2_men3-->
+        <h6><a href="#">MORE</a></h6> 
+			</div><!--tab2-->
+
+      <div id="tab3" class="tab_content bg3">
+				<!--Content-->
+        <div class="tab3_life1">
+          <a href="#" class="po_1"><img src="./images/main/best_keyword_L1.jpg" alt="생활1"></a>
+          <p class="up_box1"><a href="#">01.</a></p>
+          <p class="up_box1-1"><a href="#">케이스</a></p>
+        </div><!--tab3_life1-->
+        <div class="tab3_life2">
+          <a href="#" class="po_2"><img src="./images/main/best_keyword_L2.jpg" alt="생활2"></a>
+          <p class="up_box2"><a href="#">02.</a></p>
+          <p class="up_box2-1"><a href="#">머그컵</a></p>
+        </div><!--tab3_life2-->
+        <div class="tab3_life3">
+          <a href="#" class="po_3"><img src="./images/main/best_keyword_L3.jpg" alt="생활3"></a>
+          <p class="up_box3"><a href="#">03.</a></p>
+          <p class="up_box3-1"><a href="#">디퓨저</a></p>
+        </div><!--tab_life3-->
+        <h6><a href="#">MORE</a></h6>
+			</div><!--tab3-->
+
+
+		</div><!--tab_container-->
+		<!--탭 끝-->
+  </div><!--bk_inner-->
+</div><!--best_keyword-->
+
+    <!-- Swiper -->
+     <div id="coupon_border">
+  <div class="swiper coupon">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="./images/main/coupon1.jpg" alt="쿠폰1"></a></div><!--swiper-slide-->
+      <div class="swiper-slide"><a href="#"><img src="./images/main/coupon2.jpg" alt="쿠폰2"></a></div><!--swiper-slide-->
+    </div><!--swiper-wrapper-->
+</div><!--coupon_border-->
+  </div><!--swiper-->
+
+  <div id="main_new">
+    <h2><a href="#">NEW</a></h2>
+    <ul class="main_new_inner">
+        <li>
+            <a href="#">
+                <img src="./images/main/NEW1.jpg" alt="신상이미지1">   
+            </a> 
+            <a href="#"><p>WOMEN</p></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./images/main/NEW2.jpg" alt="신상이미지2">
+            </a>
+            <a href="#"><p>MEN</p></a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./images/main/NEW3.jpg" alt="신상이미지3">
+            </a>
+            <a href="#"><p>LIFE</p></a>
+        </li>
+    </ul>
+  </div><!--main_new-->
+
+  <div id="main_curation">
+    <div class="mct_title">
+      <h2><a href="#">CURATION</a></h2>
+      <h6><a href="#">MORE</a></h6>
+    </div><!--mct_title-->
+
+    <div class="mct_inner">
+      <div class="mct_box">
+        <div class="mct_box_inner">
+          <a href="#"><img src="./images/main/CURATION1.jpg" alt="큐레이션1"></a>
+          <a href="#"><p>미리 준비하는 가을, 가죽 자켓 위시리스트</p></a>
+        </div><!--mct_box_inner-->
+        
+        <div class="mct_box_inner1">
+          <div class="mct_box_inner1-1">
+            <div class="mct_img"><a href="#"><img src="./images/main/curation1-1.jpg" alt="큐레이션1-1"></a></div><!--mct_img-->
+            <div class="mct_text">
+              <a href="#">
+                <h5>LEMARD <span>(르마드)</span></h5>
+                <h6>레이싱 투톤 자켓 - 버건디 </h6>
+                <p>289,000</p>
+              </a>
+            </div><!--mct_text-->
+          </div><!--mct_box_inner1-1-->
+          <div class="mct_box_inner1-1">
+            <div class="mct_img"><a href="#"><img src="./images/main/curation1-2.jpg" alt="큐레이션1-2"></a></div><!--mct_img-->
+            <div class="mct_text">
+              <a href="#">
+                <h5>EASY NO EASY<span> (이지노이지)</span></h5>
+                <h6>Racer Jacket - GRAY </h6>
+                <p>199,000</p>
+              </a>
+            </div><!--mct_text-->
+          </div><!--mct_box_inner1-1-->
+          <div class="mct_box_inner1-1">
+            <div class="mct_img"><a href="#"><img src="./images/main/curation1-3.jpg" alt="큐레이션1-3"></a></div><!--mct_img-->
+            <div class="mct_text_on">
+              <a href="#">
+                <h5>DIMITRI BLACK<span> (디미트리블랙)</span></h5>
+                <h6>AUTHENTIC WASHED VEGAN <br>
+                  LEATHER JACKET_BLACK</h6>
+                <p>87,000</p>
+              </a>
+            </div><!--mct_text-->
+          </div><!--mct_box_inner1-1-->
+        </div><!--mct_box_inner1-->
+        
+
+      </div><!--mct_box-->
+      <div class="mct_box">
+        <div class="mct_box_inner">
+          <a href="#"><img src="./images/main/CURATION2.jpg" alt="큐레이션2"></a>
+          <a href="#"><p>나만의 공간을 위한 홈 스타일링</p></a>
+        </div><!--mct_box_inner-->
+        <div class="mct_box_inner1">
+          <div class="mct_box_inner1-1">
+            <div class="mct_img"><a href="#"><img src="./images/main/curation2-1.jpg" alt="큐레이션2-1"></a></div><!--mct_img-->
+            <div class="mct_text_on">
+              <a href="#">
+                <h5>GATA<span>(가타)</span></h5>
+                <h6>Pappardelle Duvet Cover - Yellow</h6>
+                <p>205,000</p>
+              </a>
+            </div><!--mct_text-->
+          </div><!--mct_box_inner1-1-->
+          <div class="mct_box_inner1-1">
+            <div class="mct_img"><a href="#"><img src="./images/main/curation2-2.jpg" alt="큐레이션2-2"></a></div><!--mct_img-->
+            <div class="mct_text">
+              <a href="#">
+                <h5>KIIMUIR<span>(키뮤어)</span></h5>
+                <h6>Lettering Rug - Burgundy</h6>
+                <p>24,500</p>
+              </a>
+            </div><!--mct_text-->
+          </div><!--mct_box_inner1-1-->
+          <div class="mct_box_inner1-1">
+            <div class="mct_img"><a href="#"><img src="./images/main/curation2-3.jpg" alt="큐레이션2-3"></a></div><!--mct_img-->
+            <div class="mct_text_on">
+              <a href="#">
+                <h5>SPAO<span>(스파오)</span></h5>
+                <h6>[해리포터] 호그와트 매직패스 잠옷<br>(PINK) 
+                  _SPPPE25U07</h6>
+                <p>39,900</p>
+              </a>
+            </div><!--mct_text-->
+          </div><!--mct_box_inner1-1-->
+        </div><!--mct_box_inner1-->
+      </div><!--mct_box-->
+    </div><!--mct_inner-->
+  </div><!--main_curation-->
+
+  <div id="footer">
+    <div class="footer_inner">
+      <div class="ft_inner">
+        <ul>
+          <li><a href="#">Q & A</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">교환 및 환불</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보 처리 방침</a></li>
+        </ul>
+        <ol>
+          <li><a href="#"><img src="./images/icon/icon5.png" alt="인스타그램이미지"></a></li>
+          <li><a href="#"><img src="./images/icon/icon6.png" alt="유튜브이미지"></a></li>
+          <li><a href="#"><img src="./images/icon/icon7.png" alt="카카오이미지"></a></li>
+        </ol>
+      </div><!--ft_inner-->
+          
+        <p>Koi(코이) / 이메일  www.Koi.co.kr <br>
+        통신판매업신고번호 제 2024-부산 해운대 48117 <br>
+        개인정보보호 책임자  김나연 / 호스팅 서비스  Koi
+        </p>
+        <p class="on">
+        일부 상품의 경우 Koi는 통신판매의 당사자가 아닌 통신판매중개자로서 상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품페이지에서 구체적인 내용을 확인하시길 바랍니다.
+        </p>
+      
+      <h2><img src="./images/main/footer.png" alt="푸터이미지"></h2>
+
+    </div><!--footer_inner-->
+  </div><!--footer-->
+
+  <!--Top버튼-->
+  <div class="top_btn"><a href="#">TOP</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--main_banner-->
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".main_banner", {
+     slidesPerView: 1,
+     spaceBetween: 30,
+     centeredSlides: true,
+       autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+       },
+     loop: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     speed:1000,
+   });
+ </script>
+
+   <!--cuppon--> 
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper(".coupon", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    loop: true,
+    speed:1000,
+  });
+</script>
+
+
+<!--탭 제이쿼리 라이브러리-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--탭 js. 원본파일에서 상대결로로 연결되어 있던 파일익 때문에, 반드시 파일을 옯겨놓고 연결해준다.-->
+    <script src="./js/tab.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

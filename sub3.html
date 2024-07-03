@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <title>Koi</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--탭 제이쿼리-->
+    <script src="js/tab_move_script.js"></script>
+      <!--TOP버튼-->
+      <script src="js/jquery-3.4.1.min.js"></script>
+	  <script src="js/script.js"></script>
+       <!--메뉴 이동시 부드럽게 하기-->
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>  
+    <!--swiper-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./css/style_sub3.css">
+   <!--폰트 어썸-->
+   <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="header_inner">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="로고이미지"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="./sub1.html">BRAND</a></li>
+                <li><a href="./sub2.html">SHOP</a></li>
+                <li><a href="./sub3.html">NOTICE</a></li>
+                <li><a href="./sub4.html">EVENT</a></li>
+            </ul>
+            <ol class="lnb">
+                <li><a href="#"><img src="./images/icon/icon1.png" alt="아이콘1"></a></li>
+                <li><a href="#"><img src="./images/icon/icon2.png" alt="아이콘2"></a></li>
+                <li><a href="#"><img src="./images/icon/icon3.png"alt="아이콘3"></a></li>
+                <li><a href="#"><img src="./images/icon/icon4.png" alt="아이콘4"></a></li>
+            </ol>
+        </div><!--header_inner-->
+    </div><!--header-->
+    <div id="title_list">
+        <ul class="t_gnb">
+            <li><a href="#sale">SALE<div class="solid"></div></a></li>
+            <li><a href="#store">OFFLINE STORE<div class="solid"></div></a></li>
+            <li><a href="#curation">CURATION<div class="solid"></div></a></li>
+        </ul>
+    </div><!--title_list-->
+
+    <div id="sale">
+        <div class="sale_title">
+            <h1><a href="#">SALE</a></h1>
+            <p><a href="#">ALL</a></p>
+        </div><!--sale_title-->
+        <div class="sale_content">
+            <div class="content1">
+                <h1><a href="#"><img src="./images/sub3/sale1.jpg" alt="세일1"></a></h1>
+                <h2>Koi _ SUMMER SEASON OFF</h2>
+                <h3>본격적인 summer season off, <br>
+                    2주간 파격적인 가격으로 만나보세요. </h3>
+                <h4>1차 : 2024.08.15(금) - 2024.08.21(수) <br>
+                    2차 : 2024.08.24(토) - 2024.08.31(토)</h4>
+            </div><!--content1-->
+            <div class="content2">
+                <h1><a href="#"><img src="./images/sub3/sale2.jpg" alt="세일1"></a></h1>
+                <h2>코이 추천 레이어드 스커트 아이템 </h2>
+                <h3>다양하게 활용 가능한 매력적인 레이어드 스커트 아이템을 <br>
+                    일주일간 합리적인 가격으로 만나보세요. </h3>
+                <h4>2024.08.23(금) - 2024.08.30(금)</h4>
+            </div><!--content2-->
+        </div><!--sale_content-->
+    </div><!--sale-->
+
+   <div id="category">
+    <div class="ct_title">
+        <h1><a href="#">CATEGORY</a></h1>
+        <p><a href="#">ALL</a></p> 
+    </div><!--ct_title-->
+    <div id="wrapper">
+        <!--탭 메뉴 영역(우리가 실제로 클릭할 부분)
+        각각의 li안에 a태그의 아이디를 가진 tab이 보이는 원리이다.
+        -->
+        <ul class="tabs4">
+          <li><span tabs="#tab20">Outer</span></li>
+          <li><span tabs="#tab21">Top</span></li>
+          <li><span tabs="#tab22">Pants</span></li>
+          <li><span tabs="#tab23">One-Piece</span></li>
+          <li><span tabs="#tab24">Skirt</span></li>
+          <li><span tabs="#tab25">Shoes</span></li>
+          <li><span tabs="#tab26">Bag & Acc</span></li>
+        </ul>
+  
+        <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+        <div class="tab_container4">
+  
+          <div id="tab20" class="tab_content4">
+            <!--Content-->
+            <ul>
+                <li class="tab20_1">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h3>Crease wind breaker / White</h3>
+                        <h4>HOKUSPOKUS</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_2">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer2.jpg" alt="아우터2"></h1>
+                        <h3>CURVED ZIPPER PUFFER DOWN 
+                            VEST (SKY BLUE)</h3>
+                        <h4>VLANDA</h4>
+                        <h5>139,000</h5>
+                        <h6><span>20%</span>111,200</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_3">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer3.jpg" alt="아우터3"></h1>
+                        <h3>WASHING VINTAGE VEST 
+                            JACKET - BEIGE</h3>
+                        <h4>VLANDA</h4>
+                        <h5>134,000</h5>
+                        <h6><span>10%</span>120,600</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_4">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer4.jpg" alt="아우터4"></h1>
+                        <h3>ACTIVE JACKET BLUE 
+                            & DARK GREY</h3>
+                        <h4>VCTR</h4>
+                        <h5>395,000</h5>
+                        <h6><span>15%</span>335,750</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_5">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer5.jpg" alt="아우터5"></h1>
+                        <h3>PALAIS Button Detail Tailored 
+                            Cropped Jacket_Beige</h3>
+                        <h4>MUSEE</h4>
+                        <h5>258,000</h5>
+                        <h6><span>15%</span>219,300</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_6">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h4>Crease wind breaker / White</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                
+                <li class="tab20_7">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h4>Crease wind breaker / White</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                
+                <li class="tab20_8">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h4>Crease wind breaker / White</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+            </ul>
+             <ul>
+                <li class="tab20_1">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h3>Crease wind breaker / White</h3>
+                        <h4>HOKUSPOKUS</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_2">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer2.jpg" alt="아우터2"></h1>
+                        <h3>CURVED ZIPPER PUFFER DOWN 
+                            VEST (SKY BLUE)</h3>
+                        <h4>VLANDA</h4>
+                        <h5>139,000</h5>
+                        <h6><span>20%</span>111,200</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_3">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer3.jpg" alt="아우터3"></h1>
+                        <h3>WASHING VINTAGE VEST 
+                            JACKET - BEIGE</h3>
+                        <h4>VLANDA</h4>
+                        <h5>134,000</h5>
+                        <h6><span>10%</span>120,600</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_4">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer4.jpg" alt="아우터4"></h1>
+                        <h3>ACTIVE JACKET BLUE 
+                            & DARK GREY</h3>
+                        <h4>VCTR</h4>
+                        <h5>395,000</h5>
+                        <h6><span>15%</span>335,750</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_5">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer5.jpg" alt="아우터5"></h1>
+                        <h3>PALAIS Button Detail Tailored 
+                            Cropped Jacket_Beige</h3>
+                        <h4>MUSEE</h4>
+                        <h5>258,000</h5>
+                        <h6><span>15%</span>219,300</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                <li class="tab20_6">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h4>Crease wind breaker / White</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                
+                <li class="tab20_7">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h4>Crease wind breaker / White</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                
+                <li class="tab20_8">
+                    <a href="#">
+                        <h1><img src="./images/sub3/sale_outer1.jpg" alt="아우터1"></h1>
+                        <h4>Crease wind breaker / White</h4>
+                        <h5>159,000</h5>
+                        <h6><span>15%</span>130,150</h6>
+                        <ol>
+                            <li><img class="imgClass" src="images/icon/icon8.png"></li>
+                            <li><img src="./images/icon/icon10.png" alt="장바구니"></li>
+                        </ol>
+                      </a>
+                </li>
+                
+                
+            </ul>
+         </div><!--tabs20-->
+        </div><!--tab_container4-->
+  
+      </div><!--wrapper-->
+      
+    <div id="store">
+        <h1><a href="#">OFFLINE STORE</a></h1>
+        <div class="store1">
+            <img src="./images/sub3/offline1.jpg" alt="스토어1">
+            <div class="text1">
+                <h2>Koi in_SEONGSU</h2>
+                <h3>Koi의 첫번째 오프라인 스토어 Koi_Forest Showcase는     자연과 함께하는 우리를 <br>
+                    지향합니다. <br> 
+                    국내 플로리스트 엘트라 바이와의 협업을 통한 조경과 패션의 환상적인 만남을 <br>
+                    경험해보세요.
+                    </h3>
+                <h4>
+                    서울 성동구 뚝섬로17길 35 <br>
+                    +82-2-462-0525</h4>
+                <ul>
+                    <li>Monday — Thursday <br>         
+                        11:00 AM — 21:00 PM</li>
+                    <li>Friday — Sunday <br>
+                        11:00 AM — 22:00 PM</li>
+                </ul>
+            </div><!--text1-->
+        </div><!--store1-->
+        <div class="store2">
+            <div class="text2">
+                <h2>Koi in_THE HYUNDAI DAEGU</h>
+                <h3>Koi의 두번째 오프라인 스토어 Koi_Station은 지하철 컨셉으로 꾸며져있습니다. <br>
+                    다양한 사람들이 오가는 지하철 플랫폼을 모티브로 다양한 컨셉의 패션과 예술을 아우르는 <br>
+                    공간을 선보입니다
+                    </h3>
+                <h4>
+                    대구광역시 중구 달구벌대로 2077 B2 <br>
+                    053-245-3450</h4>
+                <ul>
+                    <li>Monday — Thursday <br>         
+                        10:30 AM — 20:00 PM</li>
+                    <li>Friday — Sunday <br>
+                        10:30 AM — 20:30 PM</li>
+                </ul>
+            </div><!--text1-->
+            <img src="./images/sub3/offline2.jpg" alt="스토어2">
+        </div><!--store2-->
+    </div><!--store-->
+
+    <div id="curation">
+        <div class="cr_title">
+            <h1><a href="#">CURATION</a></h1>
+            <p><a href="#">MORE</a></p> 
+        </div><!--cr_title-->
+        <h2>Koi(코이)는 매주 금요일, MD추천 상품을 선보입니다. <br>
+            코이가 제안하는 다양한 아이템을 한눈에 알아보세요!</h2>
+        <div class="cr_content">
+            <div class="cr_text">
+                <h3>미리 준비하는 가을, <br>
+                가죽자켓 위시리스트</h3>
+                <a href="#">자세히 보기</a>
+            </div><!--cr_text-->
+            <div class="cr_img">
+                <a href="#"><img src="./images/sub3/CURATION.jpg" alt="큐레이션"></a>
+            </div><!--cr_img-->
+              <!-- Swiper -->
+                <div class="swiper cr_box">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/sub3/curation1.jpg" alt="큐레이션1">
+                        <h4>LEMARD <span>(르마드)</span></h4>
+                        <h5>레이싱 투톤 자켓 - 버건디 </h5>
+                        <h6>289,000</h6>
+                        <a href="#">제품 페이지로 이동</a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/sub3/curation2.jpg" alt="큐레이션2">
+                        <h4>EASY NO EASY<span>(이지노이지)</span></h4>
+                        <h5>Racer Jacket - GRAY </h5>
+                        <h6>199,000</h6>
+                        <a href="#">제품 페이지로 이동</a>
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <img src="./images/sub3/curation3.jpg" alt="큐레이션3">
+                        <h4>DIMITRI BLACK<span>(디미트리블랙)</span></h4>
+                        <h5>AUTHENTIC WASHED VEGAN 
+                            LEATHER JACKET_BLACK </h5>
+                        <h6>87,000</h6>
+                        <a href="#">제품 페이지로 이동</a>
+                    </div><!--swiper-slide-->
+                    
+                    </div><!--swiper-wrapper-->
+                </div><!--cr_box-->
+        </div><!--cr_content-->
+    </div><!--curation-->
+
+    <div id="footer">
+        <div class="footer_inner">
+          <div class="ft_inner">
+            <ul>
+              <li><a href="#">Q & A</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">교환 및 환불</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보 처리 방침</a></li>
+            </ul>
+            <ol>
+              <li><a href="#"><img src="./images/icon/icon5.png" alt="인스타그램이미지"></a></li>
+              <li><a href="#"><img src="./images/icon/icon6.png" alt="유튜브이미지"></a></li>
+              <li><a href="#"><img src="./images/icon/icon7.png" alt="카카오이미지"></a></li>
+            </ol>
+          </div><!--ft_inner-->
+              
+            <p>Koi(코이) / 이메일  www.Koi.co.kr <br>
+            통신판매업신고번호 제 2024-부산 해운대 48117 <br>
+            개인정보보호 책임자  김나연 / 호스팅 서비스  Koi
+            </p>
+            <p class="on">
+            일부 상품의 경우 Koi는 통신판매의 당사자가 아닌 통신판매중개자로서 상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품페이지에서 구체적인 내용을 확인하시길 바랍니다.
+            </p>
+          
+          <h2><img src="./images/main/footer.png" alt="푸터이미지"></h2>
+    
+        </div><!--footer_inner-->
+      </div><!--footer-->
+
+
+
+       <!--Top버튼-->
+    <div class="top_btn"><a href="#">TOP</a></div>
+
+    <!--상ㅇ단 메뉴 스크롤시  숨기기-->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script>
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('#title_list').outerHeight();
+        
+            $(window).scroll(function (event) {
+              didScroll = true;
+            });
+        
+            setInterval(function () {
+              if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+              }
+            }, 250);
+        
+            function hasScrolled() {
+              var st = $(this).scrollTop();
+        
+              // Make sure they scroll more than delta
+              if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+        
+              // If they scrolled down and are past the navbar, add class .nav-up.
+              // This is necessary so you never see what is "behind" the navbar.
+              if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('#title_list').removeClass('nav-down').addClass('nav-up');
+              } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                  $('#title_list').removeClass('nav-up').addClass('nav-down');
+                }
+              }
+        
+              lastScrollTop = st;
+            }
+        
+        
+          </script>
+
+
+
+
+
+
+
+<!--메뉴 이동 시 부드럽게 하기-->
+<script>
+  $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+      $('html, body').animate({
+      scrollTop: target.offset().top
+      }, 500);//움직이는 시간 조정
+      return false;
+      }
+      }
+      });
+      });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".cr_box", {
+     grabCursor: true,
+     effect: "creative",
+     creativeEffect: {
+       prev: {
+         shadow: true,
+         translate: [0, 0, -400],
+       },
+       next: {
+         translate: ["100%", 0, 0],
+       },
+     },
+   });
+   </script>
+
+    
+
+</body>
+</html>
