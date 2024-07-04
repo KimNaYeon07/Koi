@@ -46,7 +46,7 @@ body{
 }
 .gnb li{
     padding-right: 93px;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: Light;
 }
 .lnb{
@@ -93,8 +93,9 @@ display: flex;}
 .t_gnb>li{
         width:33%;}
 .t_gnb>li>a{display:block;
-        font-size:23px;
-        padding:20px 0 0;
+        font-size:21px;
+        padding:16px 0 0;
+        letter-spacing: 0.5px;
     color: #979797;}
 .t_gnb>li>a:hover{color:#4E4F51;}
 .solid{width:90%;
@@ -168,6 +169,7 @@ display: flex;}
     font-weight: 300;
     letter-spacing: 0.5px;
 }
+
 /*category*/
 #category{
     margin: 0 auto;
@@ -195,7 +197,6 @@ display: flex;}
 .tabs4 {
     margin: 0 auto;
     padding-top: 45px;
-    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     width: 1340px;
@@ -286,43 +287,43 @@ display: flex;}
 }
 
 /*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
-#tab20 {
+#tab20, #tab21, #tab22, #tab23, #tab24, #tab25, #tab26 {
     width:6000px;
     /*ul길이의 두배!*/
     display: flex;
     animation: rotate 40s linear infinite;
 }
 
-#tab20 ul {
+#tab20 ul, #tab21 ul, #tab22 ul, #tab23 ul, #tab24 ul, #tab25 ul, #tab26 ul {
     display: flex;
     width: 4800px;
     /*li크기를 전부합한것보다 더 여유있게.*/
     justify-content: space-around;
 }
 
-#tab20 ul li {
+#tab20 ul li, #tab21 ul li, #tab22 ul li, #tab23 ul li, #tab24 ul li, #tab25 ul li, #tab26 ul li {
     width: 300px;
 }
 
 /*width를 본인에 맞게 수정하여 사용하세요!*/
-#tab20>ul>li:nth-child(2nss) {
+#tab20>ul>li:nth-child(2n), #tab21>ul>li:nth-child(2n), #tab22>ul>li:nth-child(2n), #tab23>ul>li:nth-child(2n), #tab24>ul>li:nth-child(2n), #tab25>ul>li:nth-child(2n), #tab26>ul>li:nth-child(2n) {
     padding-top: 190px
 }
-#tab20>ul>li:nth-child(2n-1) {
+#tab20>ul>li:nth-child(2n-1), #tab21>ul>li:nth-child(2n-1), #tab22>ul>li:nth-child(2n-1), #tab23>ul>li:nth-child(2n-1), #tab24>ul>li:nth-child(2n-1), #tab25>ul>li:nth-child(2n-1), #tab26>ul>li:nth-child(2n-1) {
     padding-top: 66px
 }
 
-#tab20>ul>li>img {
+#tab20>ul>li>img, #tab21>ul>li>img , #tab22>ul>li>img , #tab23>ul>li>img , #tab24>ul>li>img , #tab25>ul>li>img, #tab26>ul>li>img   {
     width: 100%;
 }
 
-#tab20:hover {
+#tab20:hover, #tab21:hover, #tab22:hover, #tab23:hover, #tab24:hover, #tab25:hover, #tab26:hover {
     animation-play-state: paused;
 }
 
 /*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
 
-#tab20 p {
+#tab20 p, #tab21 p, #tab22 p, #tab23 p, #tab24 p, #tab25 p, #tab26 p {
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -416,7 +417,7 @@ display: flex;}
     margin: 0 auto;
 }
 .cr_title h1 a{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 300;
 
 }.cr_title p a{
@@ -450,7 +451,7 @@ display: flex;}
     margin-right: 120px;
 }
 .cr_text>h3{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.3;
@@ -539,7 +540,7 @@ display: flex;}
 /*footer*/
 #footer{
     border-top: #ccc 1.5px solid;
-    margin-top: 260px;
+    margin-top: 380px;
 }
 .footer_inner{
     margin:0px auto;

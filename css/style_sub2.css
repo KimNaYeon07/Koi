@@ -45,7 +45,7 @@ body{
 }
 .gnb li{
     padding-right: 93px;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: Light;
 }
 .lnb{
@@ -85,6 +85,7 @@ a:active{text-decoration:none; color:#000;}
     background-position: bottom center;
 }
 .t_gnb{
+    width: 1700px;
     margin:auto;
     text-transform:uppercase;
     text-align:center;
@@ -92,8 +93,9 @@ display: flex;}
 .t_gnb>li{
         width:25%;}
 .t_gnb>li>a{display:block;
-        font-size:23px;
-        padding:20px 0 0;
+        font-size:20px;
+        padding:16px 0 0;
+        letter-spacing: 0.5px;
     color: #979797;}
 .t_gnb>li>a:hover{color:#4E4F51;}
 .solid{width:80%;
@@ -331,6 +333,7 @@ display: flex;}
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 /*hot*/
 #hot{
     margin: 0 auto;
@@ -385,7 +388,7 @@ display: flex;}
     margin: 0 auto;
     padding-top: 180px;
     width: 1450px;
-    height: 1553PX;
+    height: 1230PX;
     position: relative;
 }
 #category h1{
@@ -455,12 +458,12 @@ display: flex;}
 
 /*글씨 속성*/
 .tab_content3 h4{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
 }
 .tab_content3 h5{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.5px;
     padding-top: 5px;
@@ -483,10 +486,16 @@ display: flex;}
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.tab3_1>a>h5, .tab3_2>a>h5, .tab3_3>a>h5,.tab3_4>a>h5,.tab3_5>a>h5,.tab3_6>a>h5,.tab3_7>a>h5,.tab3_8>a>h5,.tab3_9>a>h5, .tab3_10>a>h5{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 /*footer*/
 #footer{
     border-top: #ccc 1.5px solid;
+    margin-top: 200px;
 }
 .footer_inner{
     margin:0px auto;
