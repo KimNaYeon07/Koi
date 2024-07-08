@@ -1,0 +1,557 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+img, iframe, video{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+body{
+    font-family: 'Pretendard';
+    color: #111;
+    font-size: 22px;
+    line-height: 24px;
+    min-width: 1500px;
+}
+/*header*/
+#header{
+    border-bottom: 2px solid #656668;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header_inner{
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.logo{
+    padding-right: 92px;
+}
+.gnb{
+    display: flex;
+}
+.gnb li{
+    padding-right: 93px;
+    font-size: 23px;
+    font-weight: Light;
+}
+.lnb{
+    display: flex;
+    margin-left: auto;
+}
+.lnb li{
+    padding-left: 35px;
+}
+
+/*title_list*/
+/*  하이퍼링크 설정 (메뉴 on)*/
+a:link{text-decoration:none; color:#000;}
+a:visited{text-decoration:none; color:#000;}
+a:hover{text-decoration:none; color:#000;}
+a:active{text-decoration:none; color:#000;}
+#title_list{
+    width: 100%;
+    background: #fff;
+    transition: top 0.2s;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 80;
+    margin-top: 100px;
+  }
+  .nav-up {
+    top: -100px !important;
+    /*헤더 높이와 같이*/
+  }
+  .nav-down {
+    top: 0px !important;
+  }
+#title_list{
+    background-image: url(../images/sub1/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.t_gnb{
+    width: 1700px;
+    margin:auto;
+    text-transform:uppercase;
+    text-align:center;
+display: flex;}	
+.t_gnb>li{
+        width:25%;}
+.t_gnb>li>a{display:block;
+        font-size:20px;
+        padding:16px 0 0;
+        letter-spacing: 0.5px;
+    color: #979797;}
+.t_gnb>li>a:hover{color:#4E4F51;}
+.solid{width:80%;
+        margin:auto;
+        margin-top:20px;
+        height:4px;
+        background:#4E4F51;
+        visibility:hidden;
+        opacity:0;
+        transform:scaleX(0);
+        transition-property:opacity, transform;
+        transition-duration:0.5s;}
+.t_gnb>li>a:hover .solid{transform:scaleX(1);
+                        opacity:1;
+                        visibility:visible;}
+
+
+
+
+
+
+
+
+/*sub메뉴 스타일*/
+#best_item{
+    margin: 0 auto;
+    padding-top: 200px;
+    width: 1450px;
+}
+.bt_inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.bt_inner h1 a{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.bt_inner p a{
+    display: inline-block;
+    background-color: #E6E6E6;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 8px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  padding-bottom: 50px;
+}
+
+.tabs li span {
+  display: block;
+  cursor: pointer;
+  padding: 10px 30px;
+  color: #4E4F51;
+}
+
+/*지금 클릭한 tab부분을 나타내는 클래스는 li에 active라는 이름으로 붙는다.*/
+.tabs li.active span {
+  border-bottom: 3px solid #000000;
+  width:50%;
+  color: #000000;
+  text-align: center;
+}
+
+/*tab_contaier*/
+.tab_content {
+  width: 1450px;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+.tab1_2, .tab1_3{
+    padding-right: 25px;
+}
+.tab1_1{
+    padding-right: 200px;
+}
+.tab_content h1 {
+  padding-bottom: 20px;
+}
+#tab1, #tab2, #tab3{
+    display: flex;
+}
+
+.tab1_1>a>ol, .tab1_2>a>ol, .tab1_3>a>ol, .tab1_4>a>ol{
+    display: flex;
+    width: 47px;
+    justify-content: space-between;
+}
+
+
+/*글씨 속성*/
+.tab_content h4{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.tab_content h5{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+}
+.tab_content h6{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 2px;
+}
+/*하트 색상변화는 효과*/
+.imgClass {
+    cursor: pointer;
+}
+/*글씨가 튀어나간부분 ...으로 표시하기*/
+.tab1_1, .tab1_2{
+    width: 300px;
+}
+.tab1_2>a>h4, .tab1_1>a>h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab1_3, .tab1_4{
+    width: 300px;
+}
+.tab1_3>a>h4, .tab1_4>a>h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*sub메뉴 스타일(new)*/
+#new{
+    margin: 0 auto;
+    padding-top: 190px;
+    width: 1450px;
+}
+.new_inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.new_inner h1 a{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.new_inner p a{
+    display: inline-block;
+    background-color: #E6E6E6;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 8px;
+}
+.tabs1{
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  padding-bottom: 50px;
+}
+
+.tabs1 li span{
+  display: block;
+  cursor: pointer;
+  padding: 10px 30px;
+  color: #4E4F51;
+}
+
+/*지금 클릭한 tab부분을 나타내는 클래스는 li에 active라는 이름으로 붙는다.*/
+.tabs1 li.active1 span {
+  border-bottom: 3px solid #000000;
+  width:50%;
+  color: #000000;
+  text-align: center;
+}
+
+/*container*/
+.tab_content1 {
+  width: 1450px;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+.tab2_2, .tab2_1{
+    padding-right: 25px;
+}
+.tab2_3{
+    padding-right: 200px;
+}
+.tab_content1 h1 {
+  padding-bottom: 20px;
+}
+#tab4, #tab5, #tab6{
+    display: flex;
+}
+
+.tab1_1>a>ol, .tab1_2>a>ol, .tab1_3>a>ol, .tab1_4>a>ol{
+    display: flex;
+    width: 47px;
+    justify-content: space-between;
+}
+
+
+/*글씨 속성*/
+.tab_content1 h4{
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.tab_content1 h5{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+}
+.tab_content1 h6{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 2px;
+}
+/*하트 색상변화는 효과*/
+.imgClass {
+    cursor: pointer;
+}
+/*글씨가 튀어나간부분 ...으로 표시하기*/
+.tab2_1, .tad2_2, .tab2_3, .tab2_4{
+    width: 300px;
+}
+.tab2_1>a>h4, .tab2_2>a>h4, .tab2_3>a>h4, .tab2_4>a>h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*hot*/
+#hot{
+    margin: 0 auto;
+    padding-top: 195px;
+    width: 1450px;
+}
+#hot h1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+#hot h1 span{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*hot_tab*/
+#hot_inner{
+    width: 855px;
+    margin-left: 595px;
+}
+
+.tabs2 li span {
+    display: block;
+    cursor: pointer;
+    padding-bottom: 55px;
+    font-size: 45px;
+    font-weight: 200;
+}
+.tabs2 li h1{
+    padding-left: 107px;
+    margin-top: -16px;
+}
+  
+/*지금 클릭한 tab부분을 나타내는 클래스는 li에 active라는 이름으로 붙는다.*/
+.tabs2 li.active2 span {
+    background-image: url(../images/icon/icon11.jpg);
+    background-repeat: no-repeat;
+    background-position: 830px 16px;
+}
+.tab_content1 ol{
+    display: flex;
+    width: 47px;
+    justify-content: space-between; 
+
+}
+
+/*category*/
+#category{
+    margin: 0 auto;
+    padding-top: 180px;
+    width: 1450px;
+    height: 1230PX;
+    position: relative;
+}
+#category h1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+#category h1 span{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*category_tab*/
+#category_inner{
+    width: 172px;
+    margin-top: 135px;
+   
+}
+
+.tabs3 li span {
+    display: block;
+    cursor: pointer;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-left: 14px;
+    font-size: 24px;
+    font-weight: 300;
+    border-bottom: 1px solid #CECECE;
+}
+/*지금 클릭한 tab부분을 나타내는 클래스는 li에 active라는 이름으로 붙는다.*/
+.tabs3 li.active3 span {
+    background-image: url(../images/icon/icon12.png);
+    background-repeat: no-repeat;
+    background-position: 150px 6px;
+}
+
+
+.tab_content3 { position: absolute;
+    top: 275px;
+    right: 0;
+  width: 1065px;
+  margin: 0 auto;
+  margin-left: 385px;
+  display: flex;
+    flex-wrap: wrap;
+    /*li가 세로 두줄로 표시되어야 하기 때문*/
+    justify-content: space-between;
+}
+
+.tab_content3>.tab1_1, .tab_content3>.tab1_2, .tab_content3>.tab1_3, .tab_content3>.tab1_4 .tab_content3>.tab1_5, .tab_content3>.tab1_6, .tab_content3>.tab1_7, .tab_content3>.tab1_8,.tab_content3>.tab1_9,.tab_content3>.tab1_10{
+        /*여기서, li가 body가 크기가 조정될 때 같이 줄었다가 늘었다가 해야하므로, 반드시 li의 길이를 상대단위로 설정한다.(%)*/
+        width: 19%;
+}
+.tab_content3 h1 {
+  padding-bottom: 12px;
+}
+
+.tab3_1>a>ol, .tab3_2>a>ol, .tab3_3>a>ol, .tab3_4>a>ol, .tab3_5>a>ol, .tab3_6>a>ol, .tab3_7>a>ol, .tab3_8>a>ol, .tab3_9>a>ol, .tab3_10>a>ol{
+    display: flex;
+    width: 47px;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+
+/*글씨 속성*/
+.tab_content3 h4{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.tab_content3 h5{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+}
+.tab_content3 h6{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+/*하트 색상변화는 효과*/
+.imgClass {
+    cursor: pointer;
+}
+/*글씨가 튀어나간부분 ...으로 표시하기*/
+.tab3_1, .tab3_2, .tab3_3, .tab3_4, .tab3_5, .tab3_6, .tab3_7, .tab3_8, .tab3_9, .tab3_10{
+    width: 200px;
+}
+.tab3_1>a>h4, .tab3_2>a>h4, .tab3_3>a>h4,.tab3_4>a>h4,.tab3_5>a>h4,.tab3_6>a>h4,.tab3_7>a>h4,.tab3_8>a>h4,.tab3_9>a>h4, .tab3_10>a>h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab3_1>a>h5, .tab3_2>a>h5, .tab3_3>a>h5,.tab3_4>a>h5,.tab3_5>a>h5,.tab3_6>a>h5,.tab3_7>a>h5,.tab3_8>a>h5,.tab3_9>a>h5, .tab3_10>a>h5{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*footer*/
+#footer{
+    border-top: #ccc 1.5px solid;
+    margin-top: 200px;
+}
+.footer_inner{
+    margin:0px auto;
+    width: 1450px;
+    position: relative;
+}
+.ft_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_inner ul{
+    display: flex;
+    padding-top: 55px;
+}
+.footer_inner ul li{
+    padding-right: 30px;
+    padding-bottom: 32px;
+}
+.footer_inner ul li a{
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer_inner ol{ 
+    display: flex;
+    padding-top: 55px;
+}
+.footer_inner ol li{
+    padding-left: 28px;
+    padding-bottom: 32px;
+}
+.footer_inner p{
+    font-size: 15px;
+}
+.footer_inner .on{
+    padding-top: 10px;
+    font-size: 14px;
+}
+.footer_inner h2{
+    position: absolute;
+    top: 0;
+    left: 1208px;
+}
+
+/*TOP버튼*/
+.top_btn{transition:all 0.5s;
+    position:fixed;
+    right:30px;
+    bottom:50px;
+    background:rgb(59, 59, 59);
+    border-radius:50%;}
+.top_btn:hover{transform:translateY(-5px);
+    box-shadow:5px 5px 10px rgba(0,0,0,0.3)}
+.top_btn>a{
+    display:inline-block;
+    letter-spacing: 1px;
+    padding:20px 8px;
+    text-align:center;
+    width:51px;
+    color:#fff;}
