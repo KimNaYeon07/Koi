@@ -18,17 +18,33 @@ body{
     color: #111;
     font-size: 22px;
     line-height: 24px;
-    background-image: url(../images/main/line_main_bg.png);
-    background-repeat: no-repeat;
-    background-position: center 965px;
     min-width: 1500px;
+}
+
+/*top_ad*/
+.top_ad{
+    height: 25px;
+    background-color: #1a1a1a;
+}
+.top_ad .swiper-slide a{
+    display: block; /*블락은 가로만 커짐*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing:1px;
+    font-size: 18px;
+    font-weight: 300;
+    /*글자는 수가 많아도 전체 덩어리로 한개의 자식으로 인식되기 때문에, a태그의 크기 안에서 글자를 가로 세로 가운데 보낼대에는 자식이 한개일 때 가운데 정렬한는 방식을 사용하면 된다.*/
 }
 
 /*header*/
 #header{
+    
     border-bottom: 2px solid #656668;
-    background-color: #FFF;
-    position: fixed;
+    background-color: rgba(250, 250, 250, 0.75);
+   position:sticky;
     top: 0;
     left: 0;
     z-index: 99;
@@ -39,17 +55,17 @@ body{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 95px;
 }
 .logo{
-    padding-right: 92px;
+    padding-right: 70px;
 }
 .gnb{
     display: flex;
 }
 .gnb li{
-    padding-right: 93px;
-    font-size: 23px;
+    padding-right: 57px;
+    font-size: 22px;
     font-weight: Light;
 }
 .lnb{
@@ -57,12 +73,13 @@ body{
     margin-left: auto;
 }
 .lnb li{
-    padding-left: 35px;
+    padding-left: 34px;
 }
+
 /*main_banner*/
 .main_banner{
     text-align: center;
-    margin-top: 100px;
+    
 }
 .swiper-wrapper .bg1{
     background-image: url(../images/main/main_banner1.jpg);
@@ -110,15 +127,18 @@ body{
     margin: 0 auto;
     padding-top: 156px;
 }
-#logo_intro img{
+#logo_intro a img{
     width: 100%;
 }
+
+
 
 /*best_keyword*/
 #best_keyword{
     background-image: url(../images/main/line_best_keyword.jpg);
-    background-position: center 235px;
+    background-position: center 250px;
     background-repeat: no-repeat;
+    padding-bottom: 20px;
 }
 #best_keyword>h2{
      width: 1450px;
@@ -127,13 +147,18 @@ body{
 }
 #best_keyword>h2>a{
     display: inline-block;
-    color: #fff;
-    background-color: #3A3A3A;
-    padding: 15px 64px 15px 14px ;
-    font-size: 40px;
-    color: #fff;
-    font-weight: 300;
     position: relative;
+    margin-bottom: 45px;
+    font-size: 60px;
+    color: #111111;
+    font-weight: 200
+}
+#best_keyword>h2>a>span{
+    display: inline-block;
+    position: relative;
+    font-size: 70px;
+    color: #111111;
+    font-weight: 100
 }
 
 .bk_inner{
@@ -289,88 +314,239 @@ body{
     padding: 10px 8px;
 }
 
-/*coupon*/
-#coupon_border{
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    margin-top: 263px;
-    margin-bottom: 240px;
+
+/*slide_text*/
+.slide_text {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.1s;
+    background-color: #111;
+    margin-top: 120px;
 }
-.coupon{
-    
-    background-color: #fff;
-    width: 1450px;
-    height: 200px;
+
+@keyframes textLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
 }
-.coupon img{
+
+.slide_text p{
+    animation: textLoop 10s linear infinite;
+    padding-left: 60px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-style: italic; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.slide_text p span{
+    animation: textLoop 10s linear infinite;
+    padding-right: 60px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #fff;
+    font-size:32px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-style: italic; 
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+/*banner*/
+
+.banner img{
     width: 100%;
-    margin: auto;
 }
+.banner>.swiper-wraper>.swiper-slide{
+    position: relative;
+}
+.slide_inner{
+    position: absolute;
+    top: 40%;
+    left: 50%; transform:translateX(-50%);
+    z-index: 80px;
+    color: #ffffff;
+    text-align: center;
+}
+.slide_inner h1{
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-size: 55px;
+}
+.slide_inner h5{
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.slide_inner p{
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 7px 5px;
+    border: 2px solid #fff;
+}
+.banner_next,.banner_prev{
+    color: #fff;
+}
+.banner_pag span{
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 0;
+    width: 90px;
+    height: 3px;
+
+}
+
 /*main_new*/
 #main_new{
+    background-image: url(../images/main/new_bg.png);
+    background-position: center 380px;
+    background-repeat: no-repeat;
+    padding-bottom: 260px;
+}
+.new_inner{
     width: 1450px;
-    margin: 171px auto;
+    margin: 0 auto;
+    margin-top: 250px;
 }
-#main_new h2 a{
+
+.new_inner h2 a{
     display: inline-block;
-    background-color: #3A3A3A;
-    margin-bottom: 130px;
-    padding: 15px 64px 15px 14px ;
-    font-size: 40px;
-    color: #fff;
-    font-weight: 300
+    padding-bottom: 80px;
+    font-size: 60px;
+    color: #111111;
+    font-weight: 200;
 }
-.main_new_inner{
+.new_inner h2 a span{
+    display: inline-block;
+    padding-bottom: 80px;
+    font-size: 70px;
+    color: #111111;
+    font-weight: 100;
+}
+.new_content{
     display: flex;
     justify-content: space-between;
 }
-.main_new_inner img{
+.new_content img{
     width: 100%; 
 }
-.main_new_inner li{
-    text-align: center;
-    height: 555px;
-    width: 450px;
+.new_content li{
+    position: relative;
 }
-.main_new_inner li a p{
+.new_content li a p{
     display: inline-block;
     margin-top: 16px;
-    background-color: #3A3A3A;
-    font-size: 28px;
-    color: #fff;
-    font-weight: 200;
-    padding: 8px 48px;
+    font-size: 25px;
+    color: #111;
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -10%;
+    left: 0;
 }
-.main_new_inner li a img{
+
+.new_content li a img{
     width: 100%;
 }
-.main_new_inner li a:hover img{
+.new_content li a:hover img{
     transform: scale(1.2,1.2);
     transition: all 0.5s;
 }
-.main_new_inner li a{
+.new_content li a{
     display: inline-block;
     overflow: hidden;
 }
 
-/*main_curation*/
-#main_curation{
-    width: 1450px;
-    margin: 234px auto;
+
+
+/*coupon*/
+
+.coupon{
+    background-color: #0b0b0b;
+    height: 200px;
+    margin-bottom: 50px;
 }
-.mct_title h2 a{
-    display: inline-block;
-    color: #fff;
-    background-color: #3A3A3A;
-    padding: 15px 64px 15px 14px ;
-    font-size: 40px;
-    color: #fff;
-    font-weight: 300
-}
-.mct_title{
-    margin-bottom: 116px;
+.coupon_box{
     display: flex;
     justify-content: space-between;
+    width: 1450px;
+    margin: 0 auto;
+    
+    color: #fff;
+    
+}
+.coupon_box .h1{
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 28px;
+    letter-spacing: 4px;
+    padding-top: 60px;
+}
+.coupon_box .h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+.coupon_box .h2 span{
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin-left: 15px;
+    padding: 3px 13px;
+    background-color: #fafafa;
+    color: #111;
+    letter-spacing: 1px;
+}
+.coupon_box img{
+    padding-top: 25px;
+}
+.coupon_next, .coupon_prev{
+    color: #e7e7e7;
+}
+
+
+
+/*main_curation*/
+#main_curation{
+    margin: 0 auto;
+    padding-top: 190px;
+    padding-bottom: 480px;
+}
+.mct_title{
+    width: 1450px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
+.mct_title h2 a{
+    font-size: 50px;
+    color: #111;
+    font-weight: 200;
+    
+}
+.mct_title h2 span{
+    display: inline-block;
+font-weight: 100;
+font-size: 60px;
+color: #111111;
+padding-right: 1080px;
+
 }
 .mct_title h6 a{
     display: inline-block;
@@ -380,15 +556,28 @@ body{
     padding: 10px 8px;
 }
 
+.mct_box_inner a img{
+    width: 100%;
+}
+.mct_box_inner a:hover img{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+.mct_box_inner a {
+    display: inline-block;
+    overflow: hidden;
+}
 .mct_inner{
+    width: 1450px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between
 }
-.mct_box_inner a img{
+.mct_box_inner a img, .mct_box_inner2 a img{
     width: 100%;
     padding-bottom: 21px;
 }
-.mct_box_inner a p{
+.mct_box_inner a p, .mct_box_inner2 a p{
     text-align: center;
     font-size: 21px;
     color: #fff;
@@ -440,6 +629,7 @@ body{
 .mct_text p, .mct_text_on p{
     font-size: 13px;
 }
+
 /*footer*/
 #footer{
     border-top: #ccc 1.5px solid;
@@ -485,6 +675,7 @@ body{
     top: 0;
     left: 1208px;
 }
+
 /*TOP버튼*/
 .top_btn{transition:all 0.5s;
     position:fixed;

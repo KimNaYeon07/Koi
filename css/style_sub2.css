@@ -35,17 +35,17 @@ body{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 86px;
 }
 .logo{
-    padding-right: 92px;
+    padding-right: 70px;
 }
 .gnb{
     display: flex;
 }
 .gnb li{
-    padding-right: 93px;
-    font-size: 23px;
+    padding-right: 57px;
+    font-size: 22px;
     font-weight: Light;
 }
 .lnb{
@@ -53,7 +53,7 @@ body{
     margin-left: auto;
 }
 .lnb li{
-    padding-left: 35px;
+    padding-left: 34px;
 }
 
 /*title_list*/
@@ -70,10 +70,11 @@ a:active{text-decoration:none; color:#000;}
     top: 0px;
     left: 0;
     z-index: 80;
-    margin-top: 100px;
+    margin-top: 86px;
+    padding-top: 5PX;
   }
   .nav-up {
-    top: -100px !important;
+    top: -86px !important;
     /*헤더 높이와 같이*/
   }
   .nav-down {
@@ -123,6 +124,7 @@ display: flex;}
 #best_item{
     margin: 0 auto;
     padding-top: 200px;
+    padding-bottom: 40px;
     width: 1450px;
 }
 .bt_inner{
@@ -131,9 +133,15 @@ display: flex;}
     padding-bottom: 50px;
 }
 .bt_inner h1 a{
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 50px;
+    color: #111;
+    font-weight: 200;
+}
+.bt_inner h1 span{
+    display: inline-block;
+font-weight: 100;
+font-size: 60px;
+color: #111111;
 }
 .bt_inner p a{
     display: inline-block;
@@ -236,6 +244,7 @@ display: flex;}
     margin: 0 auto;
     padding-top: 190px;
     width: 1450px;
+    padding-bottom: 180px;
 }
 .new_inner{
     display: flex;
@@ -243,9 +252,16 @@ display: flex;}
     padding-bottom: 50px;
 }
 .new_inner h1 a{
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 50px;
+    color: #111;
+    font-weight: 200;
+    
+}
+.new_inner h1 span{
+    display: inline-block;
+font-weight: 100;
+font-size: 60px;
+color: #111111;
 }
 .new_inner p a{
     display: inline-block;
@@ -337,19 +353,27 @@ display: flex;}
 /*hot*/
 #hot{
     margin: 0 auto;
-    padding-top: 195px;
+    padding-top: 180px;
     width: 1450px;
+    padding-bottom: 100px;
+}
+#hot h2{
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
 }
 #hot h1{
     font-size: 50px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 1;
+    font-weight: 200;
+    line-height: 1.5;
 }
-#hot h1 span{
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: 2px;
+#hot h2 span{
+    display: inline-block;
+    font-weight: 100;
+    padding-bottom: 30px;
+    font-size: 70px;
+    color: #111111;
 }
 
 /*hot_tab*/
@@ -386,30 +410,33 @@ display: flex;}
 /*category*/
 #category{
     margin: 0 auto;
-    padding-top: 180px;
+    padding-top: 190px;
+    padding-bottom: 320px;
     width: 1450px;
     height: 1230PX;
     position: relative;
 }
+#category h2{
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
 #category h1{
     font-size: 50px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 1;
+    font-weight: 200;
+    line-height: 1.5;
 }
-#category h1 span{
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: 2px;
+#category h2 span{
+    display: inline-block;
+    font-weight: 100;
+    font-size: 70px;
+    color: #111111;
 }
-
 /*category_tab*/
 #category_inner{
     width: 172px;
-    margin-top: 135px;
-   
+    margin-top: 135px;  
 }
-
 .tabs3 li span {
     display: block;
     cursor: pointer;
@@ -427,8 +454,8 @@ display: flex;}
     background-position: 150px 6px;
 }
 
-
-.tab_content3 { position: absolute;
+.tab_content3 { 
+    position: absolute;
     top: 275px;
     right: 0;
   width: 1065px;
@@ -452,7 +479,6 @@ display: flex;}
     display: flex;
     width: 47px;
     justify-content: space-between;
-    padding-bottom: 80px;
 }
 
 
@@ -481,6 +507,10 @@ display: flex;}
 .tab3_1, .tab3_2, .tab3_3, .tab3_4, .tab3_5, .tab3_6, .tab3_7, .tab3_8, .tab3_9, .tab3_10{
     width: 200px;
 }
+.tab3_1, .tab3_2, .tab3_3, .tab3_4, .tab3_5{
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
 .tab3_1>a>h4, .tab3_2>a>h4, .tab3_3>a>h4,.tab3_4>a>h4,.tab3_5>a>h4,.tab3_6>a>h4,.tab3_7>a>h4,.tab3_8>a>h4,.tab3_9>a>h4, .tab3_10>a>h4{
     white-space: nowrap;
     overflow: hidden;
@@ -495,7 +525,6 @@ display: flex;}
 /*footer*/
 #footer{
     border-top: #ccc 1.5px solid;
-    margin-top: 200px;
 }
 .footer_inner{
     margin:0px auto;
