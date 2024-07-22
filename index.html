@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
      <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./css/style.css">
     <!--TOP버튼-->
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -14,13 +15,24 @@
     <!--폰트 어썸-->
     <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
 </head>
+
 <body>
+   <!-- Swiper -->
+   <div class="swiper top_ad">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#">Koi 공식 온라인 스토어</a></div><!--swiper-slide-->
+      <div class="swiper-slide"><a href="#">전 상품 무료배송</a></div><!--swiper-slide-->
+      <div class="swiper-slide"><a href="#">8월 드로우 이벤트</a></div><!--swiper-slide-->
+    </div><!--swiper-wrapper-->
+  </div><!--swiper-->
+
     <div id="header">
         <div class="header_inner">
             <div class="logo">
                 <a href="./index.html"><img src="./images/logo.png" alt="로고이미지"></a>
             </div>
             <ul class="gnb">
+                <li><a href="./sub5.html">ABOUT</a></li>
                 <li><a href="./sub1.html">BRAND</a></li>
                 <li><a href="./sub2.html">SHOP</a></li>
                 <li><a href="./sub3.html">NOTICE</a></li>
@@ -42,15 +54,21 @@
       <div class="swiper-slide bg2"><a href="#" onclick="return false" ></a></div><!--swiper-slide-->
       <div class="swiper-slide bg3"><a href="#" onclick="return false"></a></div><!--swiper-slide-->
     </div><!--swiper-wrapper-->
+    </div>
     <div class="swiper-pagination mb_pag"></div>
   </div><!--swiper-->
 
+  
   <div id="logo_intro">
-    <img src="./images/main/logo_intro.jpg" alt="로고 인트로 이미지">
+    <a href="sub5.html">
+    <img src="./images/main/logo_intro.jpg" alt="로고 인트로 이미지"></a>
   </div><!--logo_intro-->
 
+
+
+
   <div id="best_keyword">
-    <h2><a href="./sub2.html#hot">BEST KEY WORD</a></h2>
+    <h2><a href="./sub2.html#hot">BEST KEY WORD <span>+</span></a></h2>
     <div class="bk_inner">
         
    <!--탭 시작-->
@@ -80,19 +98,19 @@
 			<div id="tab1" class="tab_content bg1">
 				<!--Content-->
         <div class="tab1_women1">
-          <a href="#" onclick="return false" class="po_1"><img src="./images/main/best_keyword_w1.jpg" alt="여자1"></a>
-          <p class="up_box1"><a href="#" onclick="return false">01.</a></p>
-          <p class="up_box1-1"><a href="#" onclick="return false">레이어드 스커트</a></p>
+          <a href="./sub2.html#hot"><img src="./images/main/best_keyword_w1.jpg" alt="여자1"></a>
+          <p class="up_box1"><a href="./sub2.html#hot">01.</a></p>
+          <p class="up_box1-1"><a href="./sub2.html#hot">레이어드 스커트</a></p>
         </div><!--tab1_women1-->
         <div class="tab1_women2">
-          <a href="#" onclick="return false" class="po_2"><img src="./images/main/best_keyword_w2.jpg" alt="여자2"></a>
-          <p class="up_box2"><a href="#" onclick="return false">02.</a></p>
-          <p class="up_box2-1"><a href="#" onclick="return false">원피스</a></p>
+          <a href="./sub2.html#hot" class="po_2"><img src="./images/main/best_keyword_w2.jpg" alt="여자2"></a>
+          <p class="up_box2"><a href="./sub2.html#hot">02.</a></p>
+          <p class="up_box2-1"><a href="./sub2.html#hot">원피스</a></p>
         </div><!--tab1_women2-->
         <div class="tab1_women3">
-          <a href="#" onclick="return false" class="po_3"><img src="./images/main/best_keyword_w3.jpg" alt="여자3"></a>
-          <p class="up_box3"><a href="#" onclick="return false" >03.</a></p>
-          <p class="up_box3-1"><a href="#" onclick="return false">백팩</a></p>
+          <a href="./sub2.html#hot" class="po_3"><img src="./images/main/best_keyword_w3.jpg" alt="여자3"></a>
+          <p class="up_box3"><a href="./sub2.html#hot" >03.</a></p>
+          <p class="up_box3-1"><a href="./sub2.html#hot">백팩</a></p>
         </div><!--tab1_women3-->
         <h6><a href="./sub2.html#hot">MORE</a></h6> 
        
@@ -101,19 +119,19 @@
 			<div id="tab2" class="tab_content bg2">
 				<!--Content-->
         <div class="tab2_men1">
-          <a href="#" onclick="return false" class="po_1"><img src="./images/main/best_keyword_m1.jpg" alt="남자1"></a>
-          <p class="up_box1"><a href="#" onclick="return false">01.</a></p>
-          <p class="up_box1-1"><a href="#" onclick="return false">반팔 셔츠</a></p>
+          <a href="./sub2.html#hot"  class="po_1"><img src="./images/main/best_keyword_m1.jpg" alt="남자1"></a>
+          <p class="up_box1"><a href="./sub2.html#hot">01.</a></p>
+          <p class="up_box1-1"><a href="./sub2.html#hot">반팔 셔츠</a></p>
         </div><!--tab2_men1-->
         <div class="tab2_men2">
-          <a href="#" onclick="return false" class="po_2"><img src="./images/main/best_keyword_m2.jpg" alt="남자2"></a>
-          <p class="up_box2"><a href="#" onclick="return false">02.</a></p>
-          <p class="up_box2-1"><a href="#" onclick="return false">바람막이</a></p>
+          <a href="./sub2.html#hot" class="po_2"><img src="./images/main/best_keyword_m2.jpg" alt="남자2"></a>
+          <p class="up_box2"><a href="./sub2.html#hot">02.</a></p>
+          <p class="up_box2-1"><a href="./sub2.html#hot">바람막이</a></p>
         </div><!--tab2_men2-->
         <div class="tab2_men3">
-          <a href="#" onclick="return false" class="po_3"><img src="./images/main/best_keyword_m3.jpg" alt="남자3"></a>
-          <p class="up_box3"><a href="#" onclick="return false">03.</a></p>
-          <p class="up_box3-1"><a href="#" onclick="return false">로퍼</a></p>
+          <a href="./sub2.html#hot" class="po_3"><img src="./images/main/best_keyword_m3.jpg" alt="남자3"></a>
+          <p class="up_box3"><a href="./sub2.html#hot">03.</a></p>
+          <p class="up_box3-1"><a href="./sub2.html#hot">로퍼</a></p>
         </div><!--tab2_men3-->
         <h6><a href="./sub2.html#hot">MORE</a></h6> 
 			</div><!--tab2-->
@@ -121,19 +139,19 @@
       <div id="tab3" class="tab_content bg3">
 				<!--Content-->
         <div class="tab3_life1">
-          <a href="#" onclick="return false" class="po_1"><img src="./images/main/best_keyword_L1.jpg" alt="생활1"></a>
-          <p class="up_box1"><a href="#" onclick="return false">01.</a></p>
-          <p class="up_box1-1"><a href="#" onclick="return false">케이스</a></p>
+          <a href="./sub2.html#hot" class="po_1"><img src="./images/main/best_keyword_L1.jpg" alt="생활1"></a>
+          <p class="up_box1"><a href="./sub2.html#hot">01.</a></p>
+          <p class="up_box1-1"><a href="./sub2.html#hot">케이스</a></p>
         </div><!--tab3_life1-->
         <div class="tab3_life2">
-          <a href="#" onclick="return false" class="po_2"><img src="./images/main/best_keyword_L2.jpg" alt="생활2"></a>
-          <p class="up_box2"><a href="#" onclick="return false">02.</a></p>
-          <p class="up_box2-1"><a href="#" onclick="return false">머그컵</a></p>
+          <a href="./sub2.html#hot" class="po_2"><img src="./images/main/best_keyword_L2.jpg" alt="생활2"></a>
+          <p class="up_box2"><a href="./sub2.html#hot">02.</a></p>
+          <p class="up_box2-1"><a href="./sub2.html#hot">머그컵</a></p>
         </div><!--tab3_life2-->
         <div class="tab3_life3">
-          <a href="#" onclick="return false" class="po_3"><img src="./images/main/best_keyword_L3.jpg" alt="생활3"></a>
-          <p class="up_box3"><a href="#" onclick="return false">03.</a></p>
-          <p class="up_box3-1"><a href="#" onclick="return false">디퓨저</a></p>
+          <a href="./sub2.html#hot"class="po_3"><img src="./images/main/best_keyword_L3.jpg" alt="생활3"></a>
+          <p class="up_box3"><a href="./sub2.html#hot">03.</a></p>
+          <p class="up_box3-1"><a href="./sub2.html#hot">디퓨저</a></p>
         </div><!--tab_life3-->
         <h6><a href="./sub2.html#hot">MORE</a></h6>
 			</div><!--tab3-->
@@ -144,51 +162,130 @@
   </div><!--bk_inner-->
 </div><!--best_keyword-->
 
-    <!-- Swiper -->
-     <div id="coupon_border">
-  <div class="swiper coupon">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><a href="#" onclick="return false"><img src="./images/main/coupon1.jpg" alt="쿠폰1"></a></div><!--swiper-slide-->
-      <div class="swiper-slide"><a href="#" onclick="return false"><img src="./images/main/coupon2.jpg" alt="쿠폰2"></a></div><!--swiper-slide-->
-    </div><!--swiper-wrapper-->
-</div><!--coupon_border-->
-  </div><!--swiper-->
+
+</div><!--swiper-->
+  <div class="slide_text">
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+  <p>Feels like <span>Koi</span></p>
+
+    <!-- <p>DONG-AH INSTITUTE of media AND ARTS. DONG-AH INSTITUTE of media AND ARTS.</p>
+    <p>DONG-AH INSTITUTE of media AND ARTS. DONG-AH INSTITUTE of media AND ARTS.</p> -->
+</div>
+<!-- Swiper -->
+<div class="swiper banner">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="./sub4.html">
+      <img src="./images/main/banner1.jpg" alt="배너1">
+      <div class="slide_inner">
+        <h1>GLOWNY</h1>
+        <h5>글로니가 정의하는 무형의 사랑</h5>
+        <p>[NEW ROMANTIC]</p>
+    </div><!---slide_inner--></a>
+    </div>
+    <div class="swiper-slide"><a href="./sub4.html">
+      <img src="./images/main/banner2.jpg" alt="배너2">
+      <div class="slide_inner">
+        <h1>NOMANUAL</h1>
+        <h5>NMxPOLYTERU </h5>
+        <p>[GARMENTS WORKSHOP]</p>
+    </div><!---slide_inner--></a>
+  </div>
+    <div class="swiper-slide"><a href="./sub4.html">
+      <img src="./images/main/banner3.jpg" alt="배너3">
+      <div class="slide_inner">
+        <h1>RARERAW</h1>
+        <h5>홈 페브릭 스타일링 </h5>
+        <p>[RARERAW TOWEL]</p>
+    </div><!---slide_inner--></a>
+    </div>
+
+  </div>
+  <div class="swiper-button-next banner_next"></div>
+  <div class="swiper-button-prev banner_prev"></div>
+  <div class="swiper-pagination banner_pag"></div>
+</div>
+
 
   <div id="main_new">
-    <h2><a href="./sub2.html#new">NEW</a></h2>
-    <ul class="main_new_inner">
+    <div class="new_inner">
+    <h2><a href="./sub2.html#new">NEW <span>+</span></a></h2>
+    <ul class="new_content">
         <li>
             <a href="./sub2.html#new#tab4">
-                <img src="./images/main/NEW1.jpg" alt="신상이미지1">   
+                <img src="./images/main/new1.jpg" alt="신상이미지1">   
             </a> 
-            <a href="#" onclick="return false"><p>WOMEN</p></a>
+            <a href="./sub2.html#new#tab4"><p>01_ WOMEN</p></a>
         </li>
         <li>
             <a href="./sub2.html#new#tab5">
                 <img src="./images/main/NEW2.jpg" alt="신상이미지2">
             </a>
-            <a href="#" onclick="return false"><p>MEN</p></a>
+            <a href="./sub2.html#new#tab5"><p>02_  MEN</p></a>
         </li>
         <li>
             <a href="./sub2.html#new#tab6">
                 <img src="./images/main/NEW3.jpg" alt="신상이미지3">
             </a>
-            <a href="#" onclick="return false"><p>LIFE</p></a>
+            <a href="./sub2.html#new#tab4"><p>03_  LIFE</p></a>
         </li>
     </ul>
+  </div><!--new_inner-->
   </div><!--main_new-->
+
+
+  
+
+
+<!-- Swiper -->
+  <div class="swiper coupon">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#" onclick="return false">
+          <div class="coupon_box">
+            <ul>
+              <li class="h1">NEW MEMBERSHIP</li>
+              <li class="h2">신규 가입 시 20% 할인쿠폰 증정<span>중복사용 불가능</span></li>
+            </ul>
+            <img src="./images/main/coupon1.png" alt="쿠폰이미지">
+          </div><!--coupon_box-->
+      </div><!--swiper-slide--></a>
+      <div class="swiper-slide">
+      <a href="#" onclick="return false">
+        <div class="coupon_box">
+          <ul>
+            <li class="h1">카카오 채널 친구 추가 혜택</li>
+            <li class="h2">카톡 친구 추가 시 15% 할인쿠폰 증정<span>중복사용 불가능</span></li>
+          </ul>
+          <img src="./images/main/coupon2.png" alt="쿠폰이미지">
+        </div><!--coupon_box-->
+    </div><!--swiper-slide-->
+    </div><!--swiper-wrapper-->
+    </div><!--coupon-->
+<div>
+
+</div>
+
+
 
   <div id="main_curation">
     <div class="mct_title">
-      <h2><a href="./sub3.html#curation">CURATION</a></h2>
+      <h2><a href="./sub3.html#curation">CURATION <span>+</span></a></h2>
       <h6><a href="./sub3.html#curation">MORE</a></h6>
     </div><!--mct_title-->
 
     <div class="mct_inner">
       <div class="mct_box">
         <div class="mct_box_inner">
-          <a href="#" onclick="return false"><img src="./images/main/CURATION1.jpg" alt="큐레이션1"></a>
-          <a href="#" onclick="return false"><p>미리 준비하는 가을, 가죽 자켓 위시리스트</p></a>
+          <a href="./sub3.html#curation" onclick="return false"><img src="./images/main/CURATION1.jpg" alt="큐레이션1"></a>
+          <a href="./sub3.html#curation" onclick="return false"><p>미리 준비하는 가을, 가죽 자켓 위시리스트</p></a>
         </div><!--mct_box_inner-->
         
         <div class="mct_box_inner1">
@@ -228,9 +325,9 @@
 
       </div><!--mct_box-->
       <div class="mct_box">
-        <div class="mct_box_inner">
-          <a href="#"><img src="./images/main/CURATION2.jpg" alt="큐레이션2"></a>
-          <a href="#"><p>나만의 공간을 위한 홈 스타일링</p></a>
+        <div class="mct_box_inner2">
+          <a href="./sub3.html#curation"><img src="./images/main/CURATION2.jpg" alt="큐레이션2"></a>
+          <a href="./sub3.html#curation"><p>나만의 공간을 위한 홈 스타일링</p></a>
         </div><!--mct_box_inner-->
         <div class="mct_box_inner1">
           <div class="mct_box_inner1-1">
@@ -268,6 +365,7 @@
       </div><!--mct_box-->
     </div><!--mct_inner-->
   </div><!--main_curation-->
+
 
   <div id="footer">
     <div class="footer_inner">
@@ -319,7 +417,20 @@
 
 
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+<!-- Initialize Swiper -->
+<script>
+ var swiper = new Swiper(".top_ad", {
+   direction: "vertical",
+   autoplay: {
+     delay: 2500,
+     disableOnInteraction: false,
+   },
+ });/*모든옵션을 안쪽으로 들어간다.*/
+</script>
 
 
 
@@ -327,17 +438,14 @@
 
 
 <!--main_banner-->
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
  <!-- Initialize Swiper -->
  <script>
    var swiper = new Swiper(".main_banner", {
      slidesPerView: 1,
-     spaceBetween: 30,
+     spaceBetween: 0,
      centeredSlides: true,
        autoplay: {
-         delay: 3000,
+         delay: 1500,
          disableOnInteraction: false,
        },
      loop: true,
@@ -354,14 +462,33 @@
  <script>
   var swiper = new Swiper(".coupon", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
     centeredSlides: true,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
+  
     loop: true,
-    speed:1000,
+    speed:1500,
+  });
+</script>
+
+
+<script>
+  var swiper = new Swiper(".banner", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  
   });
 </script>
 
