@@ -249,13 +249,13 @@ display: flex;}
 }
 .intro_text h2{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     color: #6e6e6e;
     font-size: 24px;
     font-weight: 300;
 }
 .intro_text p{
-    line-height: 1.3;
+    line-height: 1.5;
 }
 .intro_img{
     width: 600px;
