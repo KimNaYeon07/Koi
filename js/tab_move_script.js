@@ -76,6 +76,10 @@ $(document).ready(function () {
       return false;
   });
 
+    //처음들어갔을때 모습 만들기...
+    $(".tab_content4").hide(); //tab_content 부분을 모두 숨김.
+    $(".tabs4").children().eq(0).addClass("active4").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+    $(".tab_content4:first").show(); //tab_contents중 첫번째꺼를 보여줌
   //On Click Event
   $(".tabs4").children().click(function () {
 
